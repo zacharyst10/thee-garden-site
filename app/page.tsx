@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           nunc urna id lectus.
         </p>
       </section>
+      <Button>Learn More</Button>
     </main>
   );
 }
