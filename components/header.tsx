@@ -7,7 +7,7 @@ import Logo from "@/public/logo.png";
 
 export default function Header() {
   return (
-    <header className="py-5 flex items-center justify-between">
+    <header className="py-5 flex items-center container justify-between">
       <Link href="/">
         <Image
           src={Logo}

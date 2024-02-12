@@ -11,8 +11,9 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
+import strawberry from "@/public/strawberry.png";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -38,9 +39,16 @@ export function Navbar() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
+                    <Image
+                      src={strawberry}
+                      alt="strawberry"
+                      width={50}
+                      height={50}
+                      placeholder="blur"
+                    />
                     <div className="mb-2 mt-4 text-lg font-medium">
                       Thee Garden Site
                     </div>
