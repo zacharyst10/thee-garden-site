@@ -21,7 +21,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="container pt-20">
+    <main className="pt-20">
       <h1>Welcome to the Garden Site!</h1>
       <p>Explore the beauty of nature and discover the joy of gardening.</p>
       <button>Get Started</button>
