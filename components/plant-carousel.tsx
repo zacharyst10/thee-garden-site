@@ -67,9 +67,9 @@ export function PlantCarousel() {
       <CarouselContent>
         {images.map((image, index) => (
           <Drawer key={index}>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4 rounded-lg">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4 rounded-lg ">
               <div className="p-1">
-                <DrawerTrigger>
+                <DrawerTrigger className="w-full h-full">
                   <Card className="p-0">
                     <CardContent className="flex p-0 aspect-square items-center rounded-lg justify-center w-full h-auto">
                       <Image
@@ -90,10 +90,10 @@ export function PlantCarousel() {
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle>{image.title}</DrawerTitle>
-                <DrawerDescription>Add to garden</DrawerDescription>
+                <DrawerDescription></DrawerDescription>
               </DrawerHeader>
               <DrawerFooter>
-                <Button>Submit</Button>
+                <Button className=" max-w-xl mx-auto">Add to my garden</Button>
                 <DrawerClose>
                   <Button variant="outline">Cancel</Button>
                 </DrawerClose>
