@@ -13,7 +13,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
-import strawberry from "@/public/strawberry.png";
+import strawberry from "@/public/icons/strawberry.png";
 
 const components: { title: string; href: string; description: string }[] = [
   {
