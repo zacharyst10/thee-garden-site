@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
@@ -26,7 +27,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "./ui/button";
-import { LoaderPage } from "./loader";
 
 const images = [
   {
@@ -58,57 +58,53 @@ const images = [
 
 export function PlantCarousel() {
   return (
-    <>
-      <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-full"
-      >
-        <CarouselContent>
-          {images.map((image, index) => (
-            <Drawer key={index}>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/4 rounded-lg ">
-                <div className="p-1">
-                  <DrawerTrigger className="w-full h-full">
-                    <Card className="p-0">
-                      <CardContent className="flex p-0 aspect-square items-center rounded-lg justify-center w-full h-auto">
-                        <Image
-                          src={image.image}
-                          alt="Plant"
-                          className="object-cover w-full h-full rounded-lg"
-                          placeholder="blur"
-                        />
-                      </CardContent>
+    <Carousel
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      className="w-full "
+    >
+      <CarouselContent>
+        {images.map((image, index) => (
+          <Drawer key={index}>
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4 rounded-lg ">
+              <div className="p-1">
+                <DrawerTrigger className="w-full h-full">
+                  <Card className="p-0">
+                    <CardContent className="flex p-0 aspect-square items-center rounded-lg justify-center w-full h-auto">
+                      <Image
+                        src={image.image}
+                        alt="Plant"
+                        className="object-cover w-full h-full rounded-lg"
+                        placeholder="blur"
+                      />
+                    </CardContent>
 
-                      <CardFooter className="flex justify-center text-5xl pt-5 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
-                        {image.title}
-                      </CardFooter>
-                    </Card>
-                  </DrawerTrigger>
-                </div>
-              </CarouselItem>
-              <DrawerContent>
-                <DrawerHeader>
-                  <DrawerTitle>{image.title}</DrawerTitle>
-                  <DrawerDescription>{image.fact}</DrawerDescription>
-                </DrawerHeader>
-                <DrawerFooter>
-                  <Button className=" max-w-xl mx-auto">
-                    Add to my garden
-                  </Button>
-                  <DrawerClose>
-                    <Button variant="outline">Cancel</Button>
-                  </DrawerClose>
-                </DrawerFooter>
-              </DrawerContent>
-            </Drawer>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </>
+                    <CardFooter className="flex justify-center text-5xl pt-5 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
+                      {image.title}
+                    </CardFooter>
+                  </Card>
+                </DrawerTrigger>
+              </div>
+            </CarouselItem>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle>{image.title}</DrawerTitle>
+                <DrawerDescription>{image.fact}</DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <Button className=" max-w-xl mx-auto">Add to my garden</Button>
+                <DrawerClose>
+                  <Button variant="outline">Cancel</Button>
+                </DrawerClose>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   );
 }
