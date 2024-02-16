@@ -56,7 +56,7 @@ const plants = [
 
 export default function Almanac() {
   return (
-    <Table className="container">
+    <Table className="container mt-10">
       <TableCaption>A list of your plants in your Almanac.</TableCaption>
       <TableHeader>
         <TableRow>
