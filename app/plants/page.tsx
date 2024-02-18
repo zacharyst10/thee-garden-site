@@ -6,7 +6,7 @@ export default function Plants() {
     <div className="container">
       <h1>Plants</h1>
       <p>Learn about the different types of plants or something!</p>
-      <div>
+      <div className="container">
         <PlantCarousel />
       </div>
     </div>
