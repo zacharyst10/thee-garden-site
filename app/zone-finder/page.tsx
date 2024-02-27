@@ -61,7 +61,7 @@ export default function ZoneFinder() {
             />
             <div>
               <p className="text-base font-semibold leading-7 text-green8">
-                Find your zone
+                Find your zone!
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 USDA Hardiness Zones
@@ -94,11 +94,11 @@ export default function ZoneFinder() {
                 </Link>
               </p>
               <p className="mt-8">
-                <div className=" flex w-[300px] flex-col  text-center shadow-[0_2px_10px] shadow-blackA4">
+                <div className=" flex w-[300px] flex-col  text-center ">
                   <h1 className="p-4">Zone Finder</h1>
                   <div className="mt-5 justify-center">
                     <input
-                      className="selection:color-white inline-flex h-[35px] w-[200px] appearance-none items-center justify-center rounded-[4px] bg-white px-[10px] text-[15px] leading-none text-black shadow-[0_0_0_1px] shadow-blackA9 outline-none selection:bg-blackA9 focus:shadow-[0_0_0_2px_black]"
+                      className="selection:color-white inline-flex h-[35px] w-[200px] appearance-none items-center justify-center rounded-[4px] bg-white px-[10px] text-[15px] leading-none text-black outline-none"
                       type="text"
                       placeholder="Enter Zip Code"
                       value={inputZip}
