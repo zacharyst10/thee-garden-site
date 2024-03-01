@@ -73,7 +73,7 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <Separator className="my-10" />
+      <Separator className="my-5" />
       <div className="mx-auto container px-6 pb-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <Separator className="mt-20 mb-5" />
+        <Separator className="my-5" />
         <p className="text-xs leading-5 text-muted-foreground">
           &copy; Stout Software Solutions, Inc. All rights reserved.
         </p>

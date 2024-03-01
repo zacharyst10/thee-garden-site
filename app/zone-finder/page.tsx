@@ -48,7 +48,7 @@ export default function ZoneFinder() {
   };
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="flex items-center ">
@@ -60,15 +60,15 @@ export default function ZoneFinder() {
               className="mr-5"
             />
             <div>
-              <p className="text-base font-semibold leading-7 text-green8">
+              <p className="text-base font-semibold text-primary leading-7 ">
                 Find your zone!
               </p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">
                 USDA Hardiness Zones
               </h1>
             </div>
           </div>
-          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
+          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 lg:max-w-none lg:grid-cols-2">
             <div>
               <p>
                 USDA hardiness zones are a standardized classification system
@@ -94,11 +94,11 @@ export default function ZoneFinder() {
                 </Link>
               </p>
               <p className="mt-8">
-                <div className=" flex w-[300px] flex-col  text-center ">
+                <div className=" flex w-[300px] flex-col text-center ">
                   <h1 className="p-4">Zone Finder</h1>
                   <div className="mt-5 justify-center">
                     <input
-                      className="selection:color-white inline-flex h-[35px] w-[200px] appearance-none items-center justify-center rounded-[4px] bg-white px-[10px] text-[15px] leading-none text-black outline-none"
+                      className=" inline-flex h-[35px] w-[200px] appearance-none items-center justify-center rounded-[4px]  px-[10px] text-[15px] leading-none  outline-none"
                       type="text"
                       placeholder="Enter Zip Code"
                       value={inputZip}
@@ -113,7 +113,7 @@ export default function ZoneFinder() {
                       }}
                     />
                     <button
-                      className="m-3 inline-flex h-[35px] cursor-default items-center justify-center rounded bg-green4 px-[15px] text-[15px] font-medium leading-none text-green11 outline-none hover:bg-green5 focus:shadow-[0_0_0_2px] focus:shadow-green7"
+                      className="m-3 inline-flex h-[35px] cursor-default items-center justify-center rounded  px-[15px] text-[15px] font-medium leading-none outline-none"
                       onClick={handleSubmit}
                     >
                       Find Zone
