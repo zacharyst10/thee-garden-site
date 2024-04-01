@@ -8,7 +8,7 @@ export function LoaderPage({ size }: LoaderProps) {
   return (
     <div className="flex items-center justify-center">
       <div
-        className="loader relative"
+        className="loader"
         style={
           { "--size": size ? `${size}px` : undefined } as React.CSSProperties
         }

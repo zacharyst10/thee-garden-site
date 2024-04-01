@@ -40,14 +40,13 @@ export default async function OrderInfo() {
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
         <Card className="sm:col-span-2">
           <CardHeader className="pb-3">
-            <CardTitle>Your Orders</CardTitle>
+            <CardTitle>Your Plants</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Introducing Our Dynamic Orders Dashboard for Seamless Management
-              and Insightful Analysis.
+              Introducing the new dashboard for your garden!
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>Create New Order</Button>
+            <Button>Add New Plant</Button>
           </CardFooter>
         </Card>
         <Card>
