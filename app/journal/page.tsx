@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "@/public/icons/logo.png";
 import Link from "next/link";
 import {
   ChevronLeft,
@@ -255,9 +256,9 @@ export default function Dashboard() {
                 className="overflow-hidden rounded-full"
               >
                 <Image
-                  src="/placeholder-user.jpg"
-                  width={36}
-                  height={36}
+                  src={Logo}
+                  width={30}
+                  height={30}
                   alt="Avatar"
                   className="overflow-hidden"
                 />
