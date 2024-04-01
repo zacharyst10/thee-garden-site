@@ -1,4 +1,3 @@
-import { Loader } from "next/dynamic";
 import Image from "next/image";
 import loadingIcon from "@/public/icons/loadingIcon.png";
 

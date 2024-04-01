@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Logo from "@/public/icons/logo.png";
-import Link from "next/link";
 import {
   ChevronLeft,
   ChevronRight,
@@ -32,8 +29,11 @@ import {
   PaginationItem,
 } from "@/components/ui/pagination";
 import { Separator } from "@/components/ui/separator";
+import { ArtificialDelay3 } from "@/lib/utils";
 
-export default function OrderDetails() {
+export default async function OrderDetails() {
+  await ArtificialDelay3();
+
   return (
     <div>
       <Card className="overflow-hidden">

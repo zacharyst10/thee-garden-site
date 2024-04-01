@@ -36,6 +36,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import OrderInfo from "@/components/dashboard/order-info";
 import OrderDetails from "@/components/dashboard/order-details";
+import { Suspense } from "react";
+import { LoaderPage } from "@/components/loader";
 
 export default function Dashboard() {
   return (
@@ -149,8 +151,26 @@ export default function Dashboard() {
         </DropdownMenu>
       </header>
       <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-        <OrderInfo />
-        <OrderDetails />
+        <Suspense
+          fallback={
+            <div className="text-center">
+              <LoaderPage />
+              Loading Order Info...
+            </div>
+          }
+        >
+          <OrderInfo />
+        </Suspense>
+        <Suspense
+          fallback={
+            <div className="text-center">
+              <LoaderPage />
+              Loading Order Details...
+            </div>
+          }
+        >
+          <OrderDetails />
+        </Suspense>
       </main>
     </div>
   );
