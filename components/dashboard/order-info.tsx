@@ -1,7 +1,5 @@
 import { File, ListFilter } from "lucide-react";
-
 import { Badge } from "@/components/ui/badge";
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -19,9 +17,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
 import { Progress } from "@/components/ui/progress";
-
 import {
   Table,
   TableBody,
