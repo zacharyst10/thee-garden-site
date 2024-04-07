@@ -165,7 +165,7 @@ export default function Dashboard() {
           fallback={
             <div className="text-center">
               <LoaderPage />
-              Loading Order Details...
+              Loading...
             </div>
           }
         >
