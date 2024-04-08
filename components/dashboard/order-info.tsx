@@ -97,10 +97,10 @@ export default async function OrderInfo() {
                 <DropdownMenuLabel>Filter by</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuCheckboxItem checked>
-                  Fulfilled
+                  Fulfilled on
                 </DropdownMenuCheckboxItem>
-                <DropdownMenuCheckboxItem>Declined</DropdownMenuCheckboxItem>
-                <DropdownMenuCheckboxItem>Refunded</DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem>Declined on</DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem>Refunded on</DropdownMenuCheckboxItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Button size="sm" variant="outline" className="h-7 gap-1 text-sm">
