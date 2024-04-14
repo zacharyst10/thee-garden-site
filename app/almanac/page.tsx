@@ -52,6 +52,83 @@ const plants = [
     preferredClimate: "Temperate",
     bloomingSeason: "Spring",
   },
+  {
+    plantName: "Lily",
+    scientificName: "Lilium spp.",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Daisy",
+    scientificName: "Bellis perennis",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Spring",
+  },
+  {
+    plantName: "Hydrangea",
+    scientificName: "Hydrangea spp.",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Peony",
+    scientificName: "Paeonia spp.",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Spring",
+  },
+  {
+    plantName: "Chrysanthemum",
+    scientificName: "Chrysanthemum spp.",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Fall",
+  },
+  {
+    plantName: "Lilac",
+    scientificName: "Syringa vulgaris",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Spring",
+  },
+  {
+    plantName: "Hibiscus",
+    scientificName: "Hibiscus spp.",
+    preferredClimate: "Tropical",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Magnolia",
+    scientificName: "Magnolia spp.",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Spring",
+  },
+  {
+    plantName: "Peppermint",
+    scientificName: "Mentha × piperita",
+    preferredClimate: "Temperate",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Basil",
+    scientificName: "Ocimum basilicum",
+    preferredClimate: "Warm",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Thyme",
+    scientificName: "Thymus vulgaris",
+    preferredClimate: "Warm",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Sage",
+    scientificName: "Salvia officinalis",
+    preferredClimate: "Warm",
+    bloomingSeason: "Summer",
+  },
+  {
+    plantName: "Oregano",
+    scientificName: "Origanum vulgare",
+    preferredClimate: "Warm",
+  },
 ];
 
 export default function Almanac() {
